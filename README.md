@@ -1,4 +1,4 @@
-Skrypt służy  analizy logów serwera, z naciskiem na wydarzenia z ostatnich 10 godzin. Składa się z dwóch głównych funkcji:
+Skrypt logi.py służy  analizy logów serwera, z naciskiem na wydarzenia z ostatnich 10 godzin. Składa się z dwóch głównych funkcji:
 1)    filter_last_10_hours_logs(log_file_path): Ta funkcja filtruje logi z pliku, który jej podasz, wyciągając tylko te wpisy, które pochodzą z ostatnich 10 godzin. Używa do tego wyrażeń regularnych (regex), aby znaleźć daty i godziny w logach, a następnie porównuje je z obecnym czasem.
 
 2)    analyze_logs(log_file_path): Ta funkcja to serce skryptu. Wykorzystuje API OpenAI (prawdopodobnie GPT-4) do analizy przefiltrowanych logów. Logi są przesyłane do modelu GPT-4, który generuje analizę tych logów, podając co się działo (w punktach, od najstarszego wydarzenia) oraz proponując ewentualne poprawki.
